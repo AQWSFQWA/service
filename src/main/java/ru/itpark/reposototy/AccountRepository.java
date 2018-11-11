@@ -26,7 +26,7 @@ public class AccountRepository {
                 return  account;
             }
         }
-        return  null;
+        throw new IllegalArgumentException();
     }
 
     public void removeById(int id) {
